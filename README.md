@@ -111,53 +111,6 @@
 - **Token Manager** – централизованное управление auth токеном
 - **Singleton Pattern** – для RetrofitClient
 
----
-
-## 📊 Структура Проекта
-
-```
-app/src/main/kotlin/
-├── MainActivity.kt                 # Главный экран с навигацией
-├── ui/
-│   ├── screens/
-│   │   ├── LoginScreen()           # Экран входа с админ-панелью
-│   │   ├── RegisterScreen()        # Экран регистрации
-│   │   ├── ScannerScreen()         # QR-сканер с CameraX
-│   │   ├── EventDetailScreen()     # Детали события
-│   │   ├── ProfileScreen()         # Профиль пользователя
-│   │   ├── ShopScreen()            # Магазин с коинами
-│   │   └── AdminPanel/
-│   │       ├── AdminMenuScreen()
-│   │       ├── AdminStandsScreen()
-│   │       └── AdminStatsScreen()
-│   ├── components/
-│   │   ├── QuizScreen()            # Интерактивный квиз
-│   │   ├── FeedbackScreen()        # Система фидбека (5 звезд)
-│   │   ├── InternshipScreen()      # Заявка на стажировку
-│   │   ├── MentorChatScreen()      # Чат с ментором
-│   │   ├── CameraPreview()         # Превью камеры
-│   │   ├── BarcodeAnalyzer        # ML Kit анализатор QR
-│   │   └── BottomBar()             # Navigation Bar
-│   └── theme/
-│       └── Colors.kt               # Цветовая схема (X5TechGreen, BGGray и т.д.)
-├── data/
-│   ├── models/
-│   │   ├── SignUpRequest/Response
-│   │   ├── LoginRequest/Response
-│   │   ├── EventResponse
-│   │   ├── ChatMessage
-│   │   ├── Quiz
-│   │   ├── ShopItem
-│   │   └── StatItem
-│   ├── api/
-│   │   ├── ApiService.kt           # Retrofit interface
-│   │   └── RetrofitClient.kt       # Singleton конфигурация
-│   └── TokenManager.kt             # Управление auth токеном
-└── utils/
-    └── handleQrScan()              # Обработка отсканированных кодов
-```
-
----
 
 ## 🎨 Дизайн и UI/UX
 
@@ -394,22 +347,4 @@ Response: {
 - Сохранение данных пользователя локально
 - Кэширование информации о событиях
 
----
 
-## 👥 Разработчик
-
-Разработано в рамках хакатона **Shorthack** компании **X5 Tech**.
-
----
-
-## 📄 Лицензия
-
-Проект создан в образовательных целях. Все права принадлежат компании X5.
-
----
-
-## 🙏 Благодарности
-
-Спасибо компании X5 за возможность участия в хакатоне и создания этого инновационного проекта!
-
-**Enjoy the platform! 🚀💚**
